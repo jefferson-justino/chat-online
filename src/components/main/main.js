@@ -3,13 +3,14 @@ import styles from './main.module.css'
 
 export default function Main() {
     const [mensagem, setMensage] = useState ('')
-    const [messages, setMessages]= useState ([{ idx: 1, idy: 2, chatx: 'porra', chaty: '' }])
+    const [messages1, setMessages1]= useState ([{ idy: ' patrick ',  chaty: ' oi ' }])
+    const [messages, setMessages]= useState ([{ idx: ' maria ',  chatx: '' }])
     
     function receberEnvio(e) {
         e.preventDefault()
-         setMessages ([{ idx: 1, idy: 2, chatx: '', chaty: mensagem }])
-
-        console.log('foi '+messages[0].chaty)
+         setMessages ([{ idx: ' maria ',  chatx: mensagem }])
+         setMensage('');
+        
     }
     
    
@@ -17,12 +18,13 @@ export default function Main() {
     return (
         <main>
             <section>
-                <span>{messages[0].chatx}</span>
+                <span>nome:{messages1[0].idy}: {messages1[0].chaty}</span>
                 <br></br>
-                <span>{messages[0].chaty}</span>
+                <span> nome:{messages[0].idx}: {messages[0].chatx}</span>
             </section>
+            <br></br>
             <form onSubmit={receberEnvio}>
-                <input type='text' className={styles.inputchat} onChange={(e) => setMensage(e.target.value)} placeholder='Digite uma mensagem' />
+                <input type='text' className={styles.inputchat}  value={mensagem} onChange={(e) => setMensage(e.target.value)} placeholder='Digite uma mensagem' />
                 <input type='submit' className={styles.submit} />
             </form>
         </main>

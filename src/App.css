@@ -1,6 +1,5 @@
-.app {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Garante que o contêiner principal ocupe a altura total da viewport */
-       
+.App {
+   
+  padding-left: 1%;
+ 
   }

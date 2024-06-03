@@ -1,11 +1,28 @@
 section{
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     width:80%;
-    height:80vh;
+    height:70vh;
     display: flex;
     flex-direction: column;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgb(104, 104, 104);
 }
 .inputchat{
-    width: 90%;
-    
+    width: 73.4%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.submit{
+    padding: 10px;
+    border-radius: 10px;
+}
+span{
+    color: rgb(0, 0, 0);
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+column-gap: 5px;
 }
