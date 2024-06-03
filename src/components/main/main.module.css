@@ -1,0 +1,11 @@
+section{
+    border: 1px solid black;
+    width:80%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+}
+.inputchat{
+    width: 90%;
+    
+}
